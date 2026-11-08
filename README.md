@@ -17,13 +17,15 @@
 
 둘 중 하나를 고릅니다.
 
+1. git checkout
 ```bash
-# A. git으로 받기
 git clone https://github.com/JisuNa/legacy-shop-migration-toy.git
 cd legacy-shop-migration-toy
 ```
 
-B. Release에서 소스 ZIP 받기: [v0.0.1 Release 페이지](https://github.com/JisuNa/legacy-shop-migration-toy/releases/tag/v0.0.1)에서 **Source code (zip)**을 받습니다.
+2. Release에서 소스 ZIP 다운로드 
+
+_[Release 링크](https://github.com/JisuNa/legacy-shop-migration-toy/releases/tag/v0.0.1)_
 
 ```bash
 unzip legacy-shop-migration-toy-0.0.1.zip

@@ -19,15 +19,16 @@
 
 ```bash
 # A. git으로 받기
-git clone <저장소 URL>
-cd <저장소 폴더>
+git clone https://github.com/JisuNa/legacy-shop-migration-toy.git
+cd legacy-shop-migration-toy
 ```
 
+B. Release에서 소스 ZIP 받기: [v0.0.1 Release 페이지](https://github.com/JisuNa/legacy-shop-migration-toy/releases/tag/v0.0.1)에서 **Source code (zip)**을 받습니다.
+
 ```bash
-# B. Release에서 소스 ZIP 받기
-unzip <받은 파일>.zip
-cd <풀린 폴더>
-chmod +x gradlew   # ZIP으로 받으면 실행 권한이 빠질 수 있다
+unzip legacy-shop-migration-toy-0.0.1.zip
+cd legacy-shop-migration-toy-0.0.1
+chmod +x gradlew   # 압축 해제 도구에 따라 실행 권한이 빠질 수 있다
 ```
 
 ### 테스트 실행 (요구사항 3 증명)

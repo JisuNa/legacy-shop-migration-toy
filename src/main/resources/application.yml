@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: payment-service
+  datasource:
+    # WAL: 읽기가 쓰기를 막지 않음 / busy_timeout: 쓰기 대기 / IMMEDIATE: 트랜잭션 시작 시 쓰기 잠금 선점 / foreign_keys: SQLite는 기본 OFF
+    url: jdbc:sqlite:data/payment.db?journal_mode=WAL&busy_timeout=5000&transaction_mode=IMMEDIATE&foreign_keys=true
+    driver-class-name: org.sqlite.JDBC
+    hikari:
+      maximum-pool-size: 4
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.community.dialect.SQLiteDialect
+  flyway:
+    enabled: true
+
+server:
+  port: 8082
+
+order:
+  base-url: http://localhost:8081

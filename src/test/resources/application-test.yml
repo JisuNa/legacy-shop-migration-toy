@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:sqlite:${java.io.tmpdir}/payment-test-${random.uuid}.db?journal_mode=WAL&busy_timeout=5000&transaction_mode=IMMEDIATE&foreign_keys=true
+order:
+  base-url: http://localhost:18089

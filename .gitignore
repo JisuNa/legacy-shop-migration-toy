@@ -1,0 +1,8 @@
+build/
+.gradle/
+.kotlin/
+.idea/
+*.iml
+data/*.db
+data/*.db-*
+.archify/
